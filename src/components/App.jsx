@@ -32,9 +32,7 @@ function App() {
       }
       return item;
     });
-    console.log(id);
     setItems(newItems);
-    console.log(items);
   };
 
   const handleRemoveAllItems = () => {
@@ -50,14 +48,12 @@ function App() {
       return { ...item, packed: true };
     });
     setItems(newItems);
-    console.log("Mark all as complete");
   };
   const handleMarkAllAsIncomplete = () => {
     const newItems = items.map((item) => {
       return { ...item, packed: false };
     });
     setItems(newItems);
-    console.log("Mark all as incomplete");
   };
 
   return (
