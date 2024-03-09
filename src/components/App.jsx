@@ -13,7 +13,7 @@ function App() {
     const newItem = {
       id: new Date().getTime(),
       name: newItemText,
-      packaged: false,
+      packed: false,
     };
 
     const newItems = [...items, newItem];
